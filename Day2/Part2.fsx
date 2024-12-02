@@ -19,8 +19,7 @@ let rec isDecreasing nums : bool =
         if second - first < 0 && second - third > 0 then isDecreasing (third :: tail)
         else false
     | [first ; second] -> second - first < 0 
-    | [_] -> true
-    | [] -> true
+    | [_] | [] -> true
 
 let rec isIncreasing nums : bool =
     match nums with
@@ -28,8 +27,7 @@ let rec isIncreasing nums : bool =
         if second - first > 0 && third - second > 0 then isIncreasing (third :: tail)
         else false
     | [first ; second] -> second - first > 0 
-    | [_] -> true
-    | [] -> true    
+    | [_] | [] -> true
 
 // let t1 = isIncreasing [1; 2;3;4;5;]
 // let f1 = isDecreasing [1; 2;3;4;5;]
