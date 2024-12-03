@@ -6,8 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Include="Part1.fsx" />
       <None Include="Part2.fsx" />
+      <None Include="Part1.fsx" />
     </ItemGroup>
 
 </Project>
